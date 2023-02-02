@@ -1,4 +1,5 @@
 # egg-passport-google-mulit
+
 google passport plugin for egg. only support OAuth 2.0.
 
 ## Install
@@ -22,18 +23,32 @@ exports.passportGoogleMulti: {
 ```js
 // config/config.default.js
 config.passportGoogleMulti = {
-  web1:{
-    key: 'your oauth key1',
-    secret: 'your oauth secret1'
+  web1: {
+    key: "your oauth key1",
+    secret: "your oauth secret1",
   },
-  web1:{
-    key: 'your oauth key2',
-    secret: 'your oauth secret2'
-  }
+  web2: {
+    key: "your oauth key2",
+    secret: "your oauth secret2",
+  },
 };
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
+
+## Router
+
+```js
+app.passport.mount("google_web1", {
+  scope: ["email", "openid"],
+  prompt: "select_account",
+});
+
+app.passport.mount("google_web2", {
+  scope: ["email", "openid"],
+  prompt: "select_account",
+});
+```
 
 ## Questions & Suggestions
 
