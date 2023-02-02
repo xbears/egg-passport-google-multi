@@ -34,7 +34,6 @@ module.exports = app => {
           const photo =
             profile.photos && profile.photos[0] && profile.photos[0].value;
 
-            console.log('params',params)
           // format user
           const user = {
             provider: 'google',
