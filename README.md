@@ -1,6 +1,6 @@
 # egg-passport-google-mulit
 
-google passport plugin for egg. only support OAuth 2.0.
+google passport plugin for eggjs. only support OAuth 2.0, support multiple accounts.
 
 ## Install
 
