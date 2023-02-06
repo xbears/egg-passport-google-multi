@@ -1,11 +1,11 @@
-# egg-passport-google-mulit
+# egg-passport-google-multi
 
 google passport plugin for eggjs. only support OAuth 2.0, support multiple accounts.
 
 ## Install
 
 ```bash
-$ npm i egg-passport-google-mulit --save
+$ npm i egg-passport-google-multi --save
 ```
 
 ## Usage
